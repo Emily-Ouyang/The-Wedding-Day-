@@ -1,0 +1,339 @@
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-top: 175px;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* navbar */
+.navbar-item-style {
+    font-size: 20px;
+    color: DarkGray;
+    position: relative;
+    bottom: 0px;
+}
+
+.navbar-item-style:hover {
+    font-size: 25px;
+    color: black;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: LightGray;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    bottom: 9px;
+    transition: all 0.3s ease-out;
+}
+
+.navbar-icon {
+    max-width: 170px;
+}
+
+/* header */
+.headerimg-carousel-style {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;    
+}
+
+/* section1 */
+.section1 {
+    height: 640px;
+    padding-top: 118px;
+    padding-bottom: 130px;
+    background-image: url("../img/section1-img.jpg");
+    position: relative;
+    text-align: center;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.section1-h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.section1-p {
+    color: white;
+    font-size: 20px;
+}
+
+.intro-box {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: all .5s ease-out;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.intro-box:hover {
+    background: white;
+    box-shadow: 0px 22px 22px rgba(0,0,0,.25);
+}
+
+.intro-line {
+    width: 20px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 10px auto;
+    transition: all .5s ease;
+    background-color: SandyBrown;
+}
+
+.intro-box:hover .intro-line {
+    width: 40px;
+}
+
+.intro1-h1 {
+    color: gray;
+}
+
+.intro1-h3 {
+    color: RosyBrown;
+}
+
+.intro1-p {
+    color: DarkGoldenrod;
+}
+
+.intro-img {
+    max-width: 320px;
+    height: 230px;
+}
+
+/* gallery */
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#galleryImage1 {
+    background-image: url("../img/gallery-image-1.jpg");
+}
+
+#galleryImage1:hover {
+    height: 600px;
+}
+
+#galleryImage2 {
+    background-image: url("../img/gallery-image-2.jpg");
+}
+
+#galleryImage2:hover {
+    height: 600px;
+}
+
+#galleryImage3 {
+    background-image: url("../img/gallery-image-3.jpg");
+}
+
+#galleryImage3:hover {
+    height: 600px;
+}
+
+#galleryImage4 {
+    background-image: url("../img/gallery-image-4.jpg");
+}
+
+#galleryImage4:hover {
+    height: 580px;
+}
+
+#galleryImage5 {
+    background-image: url("../img/gallery-image-5.jpg");
+}
+
+#galleryImage5:hover {
+    height: 600px;
+}
+
+#galleryImage6 {
+    background-image: url("../img/gallery-image-6.jpg");
+}
+
+#galleryImage6:hover {
+    height: 600px;
+}
+
+#galleryImage7 {
+    background-image: url("../img/gallery-image-7.jpg");
+}
+
+#galleryImage7:hover {
+    height: 600px;
+}
+
+#galleryImage8 {
+    background-image: url("../img/gallery-image-8.jpg");
+}
+
+#galleryImage8:hover {
+    height: 570px;
+}
+
+.button1 {
+    padding: 5px;
+    position: relative;
+    left: 660px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(156, 156, 228);
+}
+
+.button1-a {
+    color: MidnightBlue;
+    font-size: 20px;
+}
+
+.button1-a:hover {
+    color: MidnightBlue;
+    text-decoration: none;
+    font-size: 23px;
+}
+/* reviewsection */
+.review-title {
+    margin-top: 78px;
+    padding: 40px;
+}
+
+.reviewsSection-color {
+    background-color: MistyRose;
+}
+
+.carousel-inner-height {
+    height: 395px;
+}
+
+.review-img {
+    width: 170px;
+}
+
+.review-h2 {
+    color: MediumOrchid;
+}
+
+.review-h5 {
+    color: MediumOrchid;
+}
+
+.review-p {
+    color: MediumPurple;
+}
+/* modalSection */
+.modalSection-img {
+    height: 275px;
+    background-image: url("../img/modalsection-img.jpg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modal-h4 {
+    color: white;
+}
+
+.modal-p {
+    color: white;
+    font-size: 20px;
+}
+
+.modal-btn {
+    background-color: MistyRose;
+}
+
+.modal-btn:hover {
+    background-color: LavenderBlush;
+}
+
+.modal-btn-a {
+    color: Gray;
+}
+
+.modal-btn-a:hover {
+    color: Gray;
+    text-decoration: none;
+}
+/* footer */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.goBackBtn {
+    width: 40px;
+    height: 40px;
+    border:none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: Gray;
+}
+
+.goBackBtn-a {
+    color: black;
+}
+
+.goBackBtn-a:hover {
+    color: white;
+}
+
+.footer-style {
+    background-color: LavenderBlush;
+}
+
+.text-uppercase {
+    color: Gray;
+    font-size: 20px;
+}
+
+.footer-li-style {
+    color: black;
+}
+
+.footer-li-style:hover {
+    color: SlateGray;
+    text-decoration: none;
+}
+
+.icon-facebook {
+    color: DodgerBlue;
+    font-size: 30px;
+  }
+
+  .icon-facebook:hover {
+    font-size: 50px;
+    text-shadow: 3px 5px 10px CornflowerBlue;
+  }
+
+  .icon-line {
+    color: Chartreuse;
+    font-size: 30px;
+  }
+
+  .icon-line:hover {
+    font-size: 50px;
+  }
+  
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+
+.footer-end {
+    background-color: LavenderBlush;
+    color: Gray;
+    font-size: 18px;
+}

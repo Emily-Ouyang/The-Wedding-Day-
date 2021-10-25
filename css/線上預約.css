@@ -1,0 +1,71 @@
+.reserve-div1 {
+    margin-top: 85px;
+    text-align: center;
+}
+
+.reserve-img {
+    max-width: 180px;
+}
+
+.reserve-div1-p {
+    font-size: 34px;
+}
+
+.reserve-div1-p1 {
+    font-size: 18px;
+    margin-bottom: 90px;
+    color: DarkGray;
+}
+
+.form-box {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 4px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  .form-header {
+    background-color: LightCoral;
+    color: white;
+    padding: 15px 15px;
+  }
+  
+  .form-header-title {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .form-body {
+    padding: 20px 20px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 6px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: LightGray;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+
+  .submit-btn {
+    background-color: LightCoral;
+    border: 1px solid LightCoral;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+
+.reserve-datetime {
+  font-size: 15px;
+  color: DarkGray;
+}

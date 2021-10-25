@@ -1,0 +1,12 @@
+.Photography-img-1 {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 330px;
+}
+
+.Photography-col-1 {
+    border: 10px solid;
+    padding: 0px;
+    border-color: white;
+}
