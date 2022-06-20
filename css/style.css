@@ -31,6 +31,10 @@ button:focus {
     max-width: 170px;
 }
 
+.icon-a {
+    text-decoration: none;
+}
+
 /* header */
 .headerimg-carousel-style {
         display: block;
