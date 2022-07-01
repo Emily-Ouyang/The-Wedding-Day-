@@ -181,10 +181,14 @@ button:focus {
     height: 570px;
 }
 
+.gallery-btn-div{
+    text-align: center;
+}
+
 .button1 {
-    padding: 5px;
+    /* padding: 5px;
     position: relative;
-    left: 660px;
+    left: 660px; */
     border-radius: 5px;
     border: none;
     background-color: rgb(156, 156, 228);
