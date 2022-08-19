@@ -1,13 +1,13 @@
 .dress-img-1 {
     display: block;
+    margin: 0 auto;
     width: 350px;
     height: 440px;
-    margin: auto;
 }
 
 .dress-col {
+    border: 10px solid;
     padding: 0px;
-    border: 5px solid;
     border-color: white;
 }
 

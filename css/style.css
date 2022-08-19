@@ -42,14 +42,8 @@ button:focus {
 /* section1 */
 .section1 {
     height: 640px;
-    padding-top: 118px;
-    padding-bottom: 130px;
     background-image: url("../img/section1-img.jpg");
-    position: relative;
     text-align: center;
-    margin-right: -15px;
-    margin-left: -15px;
-    margin-bottom: 0px;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.7;
@@ -57,14 +51,19 @@ button:focus {
 
 .section1-h1 {
     color: white;
-    font-size: 50px;
+    font-size: 40px;
+    padding-top: 30px;
 }
 
 .section1-p {
     color: white;
     font-size: 20px;
 }
-
+@media(max-width:767px) {
+    .section1-h1 {
+        font-size: 20px;
+    }
+}
 .intro-box {
     border-radius: 15px;
     margin-bottom: 15px;
@@ -104,8 +103,8 @@ button:focus {
 }
 
 .intro-img {
-    max-width: 320px;
-    height: 230px;
+    width: 320px;
+    height: 295px;
 }
 
 /* gallery */
@@ -186,9 +185,7 @@ button:focus {
 }
 
 .button1 {
-    /* padding: 5px;
-    position: relative;
-    left: 660px; */
+    padding: 8px;
     border-radius: 5px;
     border: none;
     background-color: rgb(156, 156, 228);
@@ -233,15 +230,24 @@ button:focus {
 .review-p {
     color: MediumPurple;
 }
+@media(max-width:900px) {
+    #reviewsSection {
+        display: none;
+    }
+}
 /* modalSection */
-.modalSection-img {
+#modalSection {
     height: 275px;
     background-image: url("../img/modalsection-img.jpg");
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+@media(max-width:900px) {
+    #modalSection {
+        margin-top: 30px;
+    }
+}
 .modal-h4 {
     color: white;
 }
@@ -272,6 +278,10 @@ footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.text-uppercase {
+    margin-top: 15px;
 }
 
 .goBackBtn {
