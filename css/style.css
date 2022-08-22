@@ -359,5 +359,9 @@ footer ul {
 }
 
 .goBackBtn-a:hover {
-    color: white;
+    color: black;
+}
+
+.goBackBtn-a:active {
+    color: black;
 }
