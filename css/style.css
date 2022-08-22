@@ -10,25 +10,37 @@ button:focus {
 
 /* navbar */
 .navbar-item-style {
-    font-size: 20px;
-    color: DarkGray;
+    font-size: 18px;
+    color: LightGray;
     position: relative;
     bottom: 0px;
 }
 
 .navbar-item-style:hover {
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     border-radius: 3px;
-    padding: 5px;
-    background-color: LightGray;
+    padding: 4px;
+    background-color: Darkgray;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
     bottom: 9px;
     transition: all 0.3s ease-out;
 }
 
+.dropdown-item {
+    color: Darkgray;
+}
+
+.dropdown-item:hover {
+    background-color: LightGray;
+}
+
+.dropdown-item:active {
+    background-color: Darkgray;
+}
+
 .navbar-icon {
-    max-width: 170px;
+    max-width: 150px;
 }
 
 /* header */
@@ -47,6 +59,12 @@ button:focus {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.7;
+}
+@media(max-width:767px) {
+    .section1 {
+        background-image: url("../img/section1-img-mobile.jpg");
+        opacity: 0.6;
+    }
 }
 
 .section1-h1 {
@@ -91,7 +109,7 @@ button:focus {
 }
 
 .intro1-h1 {
-    color: gray;
+    color: Gray;
 }
 
 .intro1-h3 {
@@ -103,81 +121,49 @@ button:focus {
 }
 
 .intro-img {
-    width: 320px;
-    height: 295px;
+    max-width: 100%;
+    height: 300px;
 }
 
 /* gallery */
 [id^='galleryImage'] {
     background-size: cover;
-    height: 500px;
+    background-position: center;
+    height: 380px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 #galleryImage1 {
     background-image: url("../img/gallery-image-1.jpg");
 }
 
-#galleryImage1:hover {
-    height: 600px;
-}
-
 #galleryImage2 {
     background-image: url("../img/gallery-image-2.jpg");
-}
-
-#galleryImage2:hover {
-    height: 600px;
 }
 
 #galleryImage3 {
     background-image: url("../img/gallery-image-3.jpg");
 }
 
-#galleryImage3:hover {
-    height: 600px;
-}
-
 #galleryImage4 {
     background-image: url("../img/gallery-image-4.jpg");
-}
-
-#galleryImage4:hover {
-    height: 580px;
 }
 
 #galleryImage5 {
     background-image: url("../img/gallery-image-5.jpg");
 }
 
-#galleryImage5:hover {
-    height: 600px;
-}
-
 #galleryImage6 {
     background-image: url("../img/gallery-image-6.jpg");
-}
-
-#galleryImage6:hover {
-    height: 600px;
 }
 
 #galleryImage7 {
     background-image: url("../img/gallery-image-7.jpg");
 }
 
-#galleryImage7:hover {
-    height: 600px;
-}
-
 #galleryImage8 {
     background-image: url("../img/gallery-image-8.jpg");
-}
-
-#galleryImage8:hover {
-    height: 570px;
 }
 
 .gallery-btn-div{
@@ -216,7 +202,7 @@ button:focus {
 }
 
 .review-img {
-    width: 170px;
+    width: 130px;
 }
 
 .review-h2 {
@@ -235,6 +221,7 @@ button:focus {
         display: none;
     }
 }
+
 /* modalSection */
 #modalSection {
     height: 275px;
@@ -248,6 +235,7 @@ button:focus {
         margin-top: 30px;
     }
 }
+
 .modal-h4 {
     color: white;
 }
@@ -255,6 +243,10 @@ button:focus {
 .modal-p {
     color: white;
     font-size: 20px;
+}
+
+.modalbtn-div {
+    text-align: center;
 }
 
 .modal-btn {
@@ -274,14 +266,80 @@ button:focus {
     text-decoration: none;
 }
 /* footer */
+.footer-style {
+    background-color: LavenderBlush;
+}
+
+.footer-list {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-align: center;
+    margin-top: 15px;
+    color: Gray;
+    font-size: 20px;
+}
+@media(max-width:767px) {
+    .text-uppercase {
+        margin-top: 27px;
+        margin-bottom: 0.3rem;
+    }
+}
+
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.text-uppercase {
-    margin-top: 15px;
+.footer-list li {
+    text-align: center;
+}
+
+.footer-li-style {
+    color: black;
+}
+
+.footer-li-style:hover {
+    color: SlateGray;
+    text-decoration: none;
+}
+
+.footer-list button {
+    border: none;
+    padding: 0;
+    background: LavenderBlush;
+}
+
+.icon-facebook {
+    color: DodgerBlue;
+    font-size: 30px;
+}
+
+.icon-facebook:hover {
+    font-size: 50px;
+    text-shadow: 3px 5px 10px CornflowerBlue;
+}
+
+.icon-line {
+    color: Chartreuse;
+    font-size: 30px;
+}
+
+.icon-line:hover {
+    font-size: 50px;
+}
+
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+
+.footer-end {
+    background-color: LavenderBlush;
+    color: Gray;
+    font-size: 18px;
 }
 
 .goBackBtn {
@@ -302,52 +360,4 @@ footer ul {
 
 .goBackBtn-a:hover {
     color: white;
-}
-
-.footer-style {
-    background-color: LavenderBlush;
-}
-
-.text-uppercase {
-    color: Gray;
-    font-size: 20px;
-}
-
-.footer-li-style {
-    color: black;
-}
-
-.footer-li-style:hover {
-    color: SlateGray;
-    text-decoration: none;
-}
-
-.icon-facebook {
-    color: DodgerBlue;
-    font-size: 30px;
-  }
-
-  .icon-facebook:hover {
-    font-size: 50px;
-    text-shadow: 3px 5px 10px CornflowerBlue;
-  }
-
-  .icon-line {
-    color: Chartreuse;
-    font-size: 30px;
-  }
-
-  .icon-line:hover {
-    font-size: 50px;
-  }
-  
-.footer-end p {
-    font-size: 8px;
-    margin: 0;
-}
-
-.footer-end {
-    background-color: LavenderBlush;
-    color: Gray;
-    font-size: 18px;
 }

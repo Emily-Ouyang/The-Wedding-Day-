@@ -1,24 +1,35 @@
 /* header */
 #header {
-    height: 350px;
-    border-radius: 0px;
-    margin-bottom: 0px;
+    height: 320px;
     background-image: url("../img/header背景圖.jpg");
+    background-position: center;
     background-size: cover;
-    background-position: center center;
-    padding: 0;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+@media(max-width:767px) {
+    #header {
+        height: 310px;
+        background-image: url("../img/header背景圖-mobile.jpg");
+        text-align: left;
+    }
 }
 
 .title {
-    padding-top: 145px;
+    padding-top: 110px;
     padding-bottom: 0;
     margin-left: 10px;
     margin-right: 0;
     color: black;
 }
+@media(max-width:767px) {
+    .title {
+        margin-left: 35px;
+    }
+}
 
 .header-h1 {
-    font-size: 45px;
+    font-size: 40px;
 }
 /* 主內容 */
 .div1 {
