@@ -1,21 +1,24 @@
 body {
     max-width: 100%;
-    overflow-x: hidden;
+    /* 將body往下推175px，避免輪播圖被navbar遮擋到 */
     padding-top: 175px;
 }
 
+/* 消除按鈕點擊前後的藍色邊框和外陰影屬性 */
 button:focus {
     outline: none;
+    box-shadow: none;
 }
 
 /* navbar */
+/* 導覽列選項樣式設定 */
 .navbar-item-style {
     font-size: 18px;
-    color: LightGray;
     position: relative;
     bottom: 0px;
 }
 
+/* 導覽列選項hover樣式設定 */
 .navbar-item-style:hover {
     font-size: 20px;
     color: black;
@@ -27,61 +30,84 @@ button:focus {
     transition: all 0.3s ease-out;
 }
 
-.dropdown-item {
-    color: Darkgray;
-}
-
-.dropdown-item:hover {
-    background-color: LightGray;
-}
-
-.dropdown-item:active {
-    background-color: Darkgray;
-}
-
+/* icon寬度設定 */
 .navbar-icon {
     max-width: 150px;
 }
 
+/* 下拉式選單選項文字顏色 */
+.dropdown-item {
+    color: Darkgray;
+}
+
+/* 下拉式選單hover特效改變背景顏色 */
+.dropdown-item:hover {
+    background-color: LightGray;
+}
+
+/* 下拉式選單active特效改變背景顏色 */
+.dropdown-item:active {
+    background-color: Darkgray;
+}
+/* navbar end */
+
 /* header */
+/* 首頁輪播圖自適應 */
 .headerimg-carousel-style {
         display: block;
         max-width: 100%;
         height: auto;
         margin: auto;    
 }
+/* header end */
 
-/* section1 */
-.section1 {
-    height: 640px;
-    background-image: url("../img/section1-img.jpg");
+/* 首頁Banner區塊 */
+.banner {
+    height: 500px;
+    background-image: url("../img/banner.jpg");
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.7;
 }
+/* RWD響應式網頁設計 */
+/* 767px以下更改區塊高度、背景圖片以及透明度 */
 @media(max-width:767px) {
-    .section1 {
-        background-image: url("../img/section1-img-mobile.jpg");
+    .banner {
+        height: 360px;
+        background-image: url("../img/banner-mobile.jpg");
         opacity: 0.6;
     }
 }
 
-.section1-h1 {
+/* h1標題樣式設定 */
+.banner-h1 {
     color: white;
     font-size: 40px;
     padding-top: 30px;
 }
-
-.section1-p {
-    color: white;
-    font-size: 20px;
-}
+/* RWD響應式網頁設計 */
+/* 767px以下更改h1標題文字大小 */
 @media(max-width:767px) {
-    .section1-h1 {
+    .banner-h1 {
         font-size: 20px;
     }
 }
+
+/* p段落樣式設定 */
+.banner-p {
+    color: white;
+    font-size: 20px;
+}
+/* 首頁Banner區塊結束 */
+
+/* 服務項目區塊 */
+/* 內容h1標題文字顏色 */
+.intro-h1 {
+    color: Gray;
+}
+
+/* 服務項目內容區塊樣式設定 */
 .intro-box {
     border-radius: 15px;
     margin-bottom: 15px;
@@ -90,11 +116,23 @@ button:focus {
     text-align: center;
 }
 
+/* 服務項目內容區塊hover特效增加外陰影 */
 .intro-box:hover {
-    background: white;
     box-shadow: 0px 22px 22px rgba(0,0,0,.25);
 }
 
+/* 服務項目區塊圖片樣式設定 */
+.intro-img {
+    max-width: 100%;
+    height: 300px;
+}
+
+/* 內容h3標題文字顏色 */
+.intro-h3 {
+    color: RosyBrown;
+}
+
+/* 內容h3標題下方線條 */
 .intro-line {
     width: 20px;
     height: 6px;
@@ -104,28 +142,19 @@ button:focus {
     background-color: SandyBrown;
 }
 
+/* 內容h3標題下方線條hover特效增加寬度 */
 .intro-box:hover .intro-line {
     width: 40px;
 }
 
-.intro1-h1 {
-    color: Gray;
-}
-
-.intro1-h3 {
-    color: RosyBrown;
-}
-
-.intro1-p {
+/* p段落文字顏色 */
+.intro-p {
     color: DarkGoldenrod;
 }
+/* 服務項目區塊結束 */
 
-.intro-img {
-    max-width: 100%;
-    height: 300px;
-}
-
-/* gallery */
+/* 攝影作品區塊 */
+/* 使用flex排版 */
 [id^='galleryImage'] {
     background-size: cover;
     background-position: center;
@@ -134,6 +163,7 @@ button:focus {
     flex-direction: column;
 }
 
+/* 攝影作品區塊背景圖片 */
 #galleryImage1 {
     background-image: url("../img/gallery-image-1.jpg");
 }
@@ -166,120 +196,156 @@ button:focus {
     background-image: url("../img/gallery-image-8.jpg");
 }
 
-.gallery-btn-div{
+/* 查看更多攝影作品按鈕區塊 */
+.gallery-btn-div {
     text-align: center;
 }
 
-.button1 {
+/* 查看更多攝影作品按鈕 */
+.gallery-btn {
     padding: 8px;
     border-radius: 5px;
     border: none;
     background-color: rgb(156, 156, 228);
 }
 
-.button1-a {
+/* 查看更多攝影作品按鈕超連結 */
+.gallery-btn-a {
     color: MidnightBlue;
     font-size: 20px;
 }
 
-.button1-a:hover {
+/* 查看更多攝影作品按鈕超連結hover樣式設定 */
+.gallery-btn-a:hover {
     color: MidnightBlue;
     text-decoration: none;
     font-size: 23px;
 }
-/* reviewsection */
+/* 攝影作品區塊結束 */
+
+/* 新人好評回饋輪播區塊 */
+/* 此區塊 900px以下 不顯示 */
+/* 新人好評回饋輪播區塊背景顏色 */
+.reviewsSection-color {
+    background-color: MistyRose;
+}
+
+/* 新人好評回饋輪播區塊標題位置 */
 .review-title {
     margin-top: 78px;
     padding: 40px;
 }
 
-.reviewsSection-color {
-    background-color: MistyRose;
-}
-
+/* 輪播內容區塊高度設定 */
 .carousel-inner-height {
     height: 395px;
 }
 
+/* 大頭照寬度 */
 .review-img {
     width: 130px;
 }
 
+/* 新人姓名文字顏色 */
 .review-h2 {
     color: MediumOrchid;
 }
 
+/* 日期數字顏色 */
 .review-h5 {
     color: MediumOrchid;
 }
 
+/* 回饋內容文字顏色 */
 .review-p {
     color: MediumPurple;
 }
+
+/* RWD響應式網頁設計 */
+/* 此區塊 900px以下 不顯示 */
 @media(max-width:900px) {
     #reviewsSection {
         display: none;
     }
 }
+/* 新人好評回饋輪播區塊結束 */
 
-/* modalSection */
-#modalSection {
+/* 線上預約區塊 */
+/* 線上預約區塊高度及背景圖片樣式設定 */
+.modalSection {
     height: 275px;
     background-image: url("../img/modalsection-img.jpg");
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* RWD響應式網頁設計 */
+/* 900px以下增加margin-top */
+/* 因為新人好評回饋區塊隱藏，所以使用margin-top拉開與按鈕的距離 */
 @media(max-width:900px) {
-    #modalSection {
+    .modalSection {
         margin-top: 30px;
     }
 }
 
+/* h4標題文字顏色 */
 .modal-h4 {
     color: white;
 }
 
+/* p段落樣式設定 */
 .modal-p {
     color: white;
     font-size: 20px;
 }
 
+/* 線上預約按鈕區塊 */
 .modalbtn-div {
     text-align: center;
 }
 
+/* 線上預約按鈕 */
 .modal-btn {
     background-color: MistyRose;
 }
 
+/* 線上預約按鈕hover特效改變背景顏色 */
 .modal-btn:hover {
     background-color: LavenderBlush;
 }
 
+/* 線上預約按鈕超連結 */
 .modal-btn-a {
     color: Gray;
 }
 
+/* 線上預約按鈕超連結hover樣式設定 */
 .modal-btn-a:hover {
     color: Gray;
     text-decoration: none;
 }
+/* 線上預約區塊結束 */
+
 /* footer */
+/* footer區塊背景顏色 */
 .footer-style {
     background-color: LavenderBlush;
 }
 
+/* footer內容區塊文字置中 */
 .footer-list {
     text-align: center;
 }
 
+/* footer內容區塊標題樣式設定 */
 .text-uppercase {
     text-align: center;
     margin-top: 15px;
     color: Gray;
     font-size: 20px;
 }
+/* RWD響應式網頁設計 */
+/* 767px以下更改footer內容區塊標題間距 */
 @media(max-width:767px) {
     .text-uppercase {
         margin-top: 27px;
@@ -287,61 +353,74 @@ button:focus {
     }
 }
 
+/* footer內容區塊ul清單容器樣式設定 */
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* footer內容區塊li清單文字置中 */
 .footer-list li {
     text-align: center;
 }
 
+/* 關注更多區塊li清單文字顏色 */
 .footer-li-style {
     color: black;
 }
 
+/* 關注更多區塊li清單hover樣式設定 */
 .footer-li-style:hover {
     color: SlateGray;
     text-decoration: none;
 }
 
+/* 追蹤我們區塊按鈕 */
 .footer-list button {
     border: none;
     padding: 0;
     background: LavenderBlush;
 }
 
+/* facebook icon樣式設定 */
 .icon-facebook {
     color: DodgerBlue;
     font-size: 30px;
 }
 
+/* facebook icon hover樣式設定 */
 .icon-facebook:hover {
     font-size: 50px;
     text-shadow: 3px 5px 10px CornflowerBlue;
 }
 
+/* line icon樣式設定 */
 .icon-line {
     color: Chartreuse;
     font-size: 30px;
 }
 
+/* line icon hover樣式設定 */
 .icon-line:hover {
     font-size: 50px;
 }
 
-.footer-end p {
-    font-size: 8px;
-    margin: 0;
-}
-
+/* footer版權區塊 */
 .footer-end {
     background-color: LavenderBlush;
     color: Gray;
     font-size: 18px;
 }
 
+/* footer版權區塊p段落樣式設定 */
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+/* footer end */
+
+/* 一鍵返回網頁最頂端按鈕 */
 .goBackBtn {
     width: 40px;
     height: 40px;
@@ -354,14 +433,17 @@ footer ul {
     background-color: Gray;
 }
 
+/* 一鍵返回網頁最頂端按鈕超連結 */
 .goBackBtn-a {
     color: black;
 }
 
+/* 一鍵返回網頁最頂端按鈕超連結hover特效(改為白色) */
 .goBackBtn-a:hover {
-    color: black;
+    color: white;
 }
 
+/* 一鍵返回網頁最頂端按鈕超連結active特效(改為黑色) */
 .goBackBtn-a:active {
     color: black;
 }

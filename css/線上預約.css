@@ -1,32 +1,44 @@
+/* 線上預約分頁開頭區塊 */
+/* 線上預約分頁開頭區塊樣式設定 */
 .reserve-div1 {
     margin-top: 85px;
     text-align: center;
 }
 
+/* icon寬度 */
 .reserve-img {
     max-width: 150px;
 }
 
+/* 線上預約分頁開頭區塊標題 */
 .reserve-div1-p {
     font-size: 30px;
 }
+/* RWD響應式網頁設計 */
+/* 540px以下更改文字大小為23px */
 @media(max-width:540px) {
   .reserve-div1-p {
     font-size: 23px;
   }
 }
 
+/* 線上預約分頁開頭區塊p段落 */
 .reserve-div1-p1 {
     font-size: 18px;
     margin-bottom: 90px;
     color: DarkGray;
 }
+/* RWD響應式網頁設計 */
+/* 540px以下更改文字大小為15px */
 @media(max-width:540px) {
   .reserve-div1-p1 {
     font-size: 15px;
   }
 }
+/* 線上預約分頁開頭區塊結束 */
 
+/* 線上預約表單區塊 */
+/* 線上預約表單區塊樣式設定 */
 .form-box {
     max-width: 600px;
     margin: 20px auto;
@@ -35,26 +47,31 @@
     overflow: hidden;
   }
 
+/* 線上預約表單標題區塊樣式設定 */
   .form-header {
     background-color: LightCoral;
     color: white;
     padding: 15px 15px;
   }
-  
+
+/* 線上預約表單標題文字樣式設定 */
   .form-header-title {
     font-size: 20px;
     margin: 0;
     text-align: center;
   }
 
+/* 線上預約表單內容區塊樣式設定 */
   .form-body {
     padding: 20px 20px;
   }
 
+/* 線上預約表單群組區塊樣式設定 */
   .form-group {
     margin-bottom: 16px;
   }
 
+/* 線上預約表單輸入欄位樣式設定 */
   .form-control {
     display: block;
     width: 100%;
@@ -67,6 +84,13 @@
     border-radius: 4px;
   }
 
+/* 預約來店時間日期區塊備註文字樣式設定 */
+  .reserve-datetime {
+    font-size: 15px;
+    color: DarkGray;
+  }
+
+/* 送出表單按鈕 */
   .submit-btn {
     background-color: LightCoral;
     border: 1px solid LightCoral;
@@ -75,8 +99,4 @@
     padding: 10px 20px;
     border-radius: 4px;
   }
-
-.reserve-datetime {
-  font-size: 15px;
-  color: DarkGray;
-}
+/* 線上預約表單區塊結束 */

@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-Hant-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>The Wedding Day｜其他攝影服務</title>
     <link rel="icon shortcut" href="./img/title-icon.jpg">
     <!-- 使用bootstrap.min.css -->
@@ -15,16 +13,17 @@
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- 使用網站樣式基本設定.css -->
     <link rel="stylesheet" href="./css/網站樣式基本設定.css">
-    <!-- 使用style.css 關於我們.css -->
+    <!-- 使用style.css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- 使用關於我們.css -->
     <link rel="stylesheet" href="./css/關於我們.css">
+    <!-- 使用婚紗攝影包套.css -->
     <link rel="stylesheet" href="./css/婚紗攝影包套.css">
 </head>
-
 <body id="返回">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-lg-0">
             <ul class="navbar-nav ml-auto text-center">
                 <li class="nav-item">
                     <a class="nav-link navbar-item-style mx-3" href="./關於我們.html">關於我們</a>
@@ -37,7 +36,7 @@
                 </li>
             </ul>
         </div>
-        <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+        <div class="mx-auto my-2 order-0 order-lg-1 position-relative">
             <a class="navbar-brand" href="./首頁.html">
                 <img src="./img/navbar-icon.png" class="navbar-icon">
             </a>
@@ -45,7 +44,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-        <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-lg-2">
             <ul class="navbar-nav mr-auto text-center">
                 <li class="nav-item dropdown">
                     <a class="nav-link navbar-item-style mx-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
@@ -65,6 +64,7 @@
         </div>
     </nav>
     <!-- navbar end -->
+
     <!-- header -->
     <header id="header">
         <div class="title">
@@ -73,9 +73,10 @@
         </div>
     </header>
     <!-- header end -->
+
     <!-- 主內容 -->
     <section id="introSection1" class="py-5">
-        <h1 class="section-title text-center my-10 intro1-h1">所有攝影服務</h1>
+        <h1 class="text-center my-10 intro-h1">所有攝影服務</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -170,11 +171,12 @@
             </div>
     </section>
     <!-- 主內容 end -->
+    
     <!-- footer -->
     <footer class="pt-5 footer-style">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 footer-list">
+                <div class="col-xxl-2 col-xl-2 col-lg-5 col-md-5 col-sm-12 col-xs-12 footer-list">
                     <h5 class="text-uppercase">關注更多</h5>
                     <ul>
                         <li>
@@ -192,9 +194,12 @@
                         <li>
                             <a class="footer-li-style" href="./線上預約.html">線上預約</a>
                         </li>
+                        <li>
+                            <a class="footer-li-style" href="./聯絡我們.html">聯絡我們</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-md-6 footer-list">
+                <div class="col-xxl-4 col-xl-4 col-lg-7 col-md-7 col-sm-12 col-xs-12 footer-list">
                     <h5 class="text-uppercase">想拍婚紗<br>歡迎來這裡↓找我們喔!</h5>
                     <ul>
                         <li>
@@ -208,7 +213,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 footer-list">
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-5 col-sm-12 col-xs-12 footer-list">
                     <h5 class="text-uppercase">營業時間</h5>
                     <ul>
                         <li>
@@ -218,11 +223,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-sm-6 col-md-6 footer-list">
+                <div class="col-xxl-2 col-xl-2 col-lg-7 col-md-7 col-sm-12 col-xs-12 footer-list">
                     <h5 class="text-uppercase">追蹤我們</h5>
-                    &nbsp;<a href="#"><i class="fab fa-facebook-square icon-facebook"></i></a>
+                    &nbsp;<button><a href="#"><i class="fab fa-facebook-square icon-facebook"></i></a></button>
                     &nbsp;&nbsp;&nbsp;
-                    <a href="#"><i class="fab fa-line icon-line"></i></a>
+                    <button><a href="#"><i class="fab fa-line icon-line"></i></a></button>
                 </div>
             </div>
         </div>
@@ -232,6 +237,8 @@
         </div>
     </footer>
     <!-- footer end -->
+
+    <!-- 一鍵返回網頁最頂端按鈕 -->
     <button class="goBackBtn">
         <a href="#返回" class="goBackBtn-a"><i class="fas fa-chevron-up"></i></a>
     </button>
@@ -239,14 +246,12 @@
     <!-- 使用jquery.min.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- 使用popper.min.js -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/ulg/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <!-- 使用bootstrap.min.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <!-- 網頁主程式 -->
-    <script src="./js/main.js"></script>
 </body>
 </html>
