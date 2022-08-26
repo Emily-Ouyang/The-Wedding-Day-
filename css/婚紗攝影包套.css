@@ -1,17 +1,13 @@
-.intro-box {
-    border-radius: 15px;
-    margin-bottom: 15px;
-    transition: all .5s ease-out;
-    padding: 15px 15px;
-    text-align: center;
+/* 主內容 */
+/* 內容h3標題文字 */
+.plan-h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: MediumVioletRed;
 }
 
-.intro-box:hover {
-    background: white;
-    box-shadow: 0px 22px 22px rgba(0,0,0,.25);
-}
-
-.包套intro-line {
+/* 內容h3標題下方線條 */
+.plan-intro-line {
     width: 40px;
     height: 6px;
     border-radius: 3px;
@@ -20,25 +16,13 @@
     background-color: LightCoral;
 }
 
-.intro-box:hover .包套intro-line {
+/* 內容h3標題下方線條hover特效增加寬度 */
+.intro-box:hover .plan-intro-line {
     width: 45px;
 }
 
-.intro1-h1 {
-    color: gray;
-}
-
-.包套-h3 {
-    margin-top: 30px;
-    font-size: 20px;
-    color: MediumVioletRed;
-}
-
-.包套intro1-p {
+/* p段落文字顏色 */
+.plan-intro-p {
     color: PaleVioletRed;
 }
-
-.intro-img {
-    max-width: 290px;
-    height: 200px;
-}
+/* 主內容結束 */
