@@ -1,33 +1,46 @@
-.contact-us-img {
-    width: 570px;
-    height: 580.75px;
-    margin-top: 80px;
+/* 主內容 */
+/* 聯絡資訊區塊圖片大小設定 */
+.information-img {
+    max-width: 100%;
+    height: 610px;
+}
+/* RWD響應式網頁設計 */
+/* 767px以下聯絡資訊區塊圖片自適應延伸 */
+@media(max-width:767px) {
+    .information-img {
+        height: auto;
+    }
 }
 
-.contact-us-div1 {
+/* 聯絡資訊區塊高度及背景顏色設定 */
+.information-div1 {
+    height: 610px;
     background-color: LightPink;
-    margin-top: 80px;
 }
 
+/* 聯絡資訊區塊開頭p段落文字 */
 .contact-us-p1 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 30px;
 }
 
+/* 聯絡資訊區塊開頭p段落下方虛線 */
 .hr-1 {
     border-style: dashed;
     border-color: DimGray;
 }
 
+/* 聯絡資訊p段落文字 */
 .contact-us-p2 {
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-.contact-us-div2 {
-    margin-top: 60px;
-    margin-left: 270px;
-    margin-bottom: 60px;
+/* 交通方式區塊 */
+.trans {
+    padding-top: 50px;
+    padding-bottom: 2px;
 }
+/* 主內容結束 */

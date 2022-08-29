@@ -41,68 +41,38 @@
 /* header end */
 
 /* 主內容 */
-.div1 {
-    display: flex;
-    background-color: MistyRose;
-    margin-bottom: 80px;
-}
-
-.about-us-img-1 {
-    width: 750px;
-    height: 720px;
-}
-
-.div2 {
-    width: 100%;
-    padding-top: 178px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-
-.div2-icon {
+/* 關於我們區塊icon */
+.about-us-icon {
     max-width: 130px;
-    position: relative;
-    left: 275px;
+    padding-top: 65px;
     padding-bottom: 35px;
 }
 
-.div2-p {
+/* 關於我們區塊內文標題 */
+.about-us-title {
     text-align: center;
-    font-size: 35px;
-    color: LightCoral;
+    font-size: 25px;
+    color: FireBrick;
     margin-bottom: 28px;
 }
 
-.div2-p1 {
+/* 關於我們區塊內文 */
+.about-us {
     text-align: center;
-    font-size: 18px;
-    color: Salmon;
+    color: LightCoral;
 }
 
-.about-us-img-2 {
-    width: 400px;
-    position: relative;
-    right: 90px;
+/* 關於我們店內環境圖片 */
+.about-us-img-box {
+    margin-bottom: 15px;
+    padding: 15px 15px;
+    text-align: center;
 }
 
-.about-us-img-3 {
-    height: 266.66px;
-}
-
-.about-us-img-4 {
-    height: 266.66px;
-    position: relative;
-    left: 90px;
-}
-
-
-.div3 {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.last-p {
+/* 關於我們結語內文 */
+.about-us-last {
+    margin-top: 6px;
     text-align: center;
     color: RosyBrown;
 }
+/* 主內容結束 */
