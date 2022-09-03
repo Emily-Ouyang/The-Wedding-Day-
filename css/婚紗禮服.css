@@ -1,32 +1,63 @@
-.dress-img-1 {
-    display: block;
-    margin: 0 auto;
-    width: 350px;
-    height: 440px;
+/* 主內容 */
+/* 婚紗禮服頁面選單 */
+.dress-nav ul {
+	display: flex;
+    justify-content: center;
+    list-style: none;
+	padding-left: 10px;
+	padding-right: 10px;
+    margin-top: 20px;
 }
 
-.dress-col {
-    border: 10px solid;
-    padding: 0px;
-    border-color: white;
+/* 婚紗禮服頁面選單超連結 */
+.dress-nav li a {
+	display: block;
+	color: LightCoral;
+	font-size: 17px;
+	text-decoration: none;
+	padding: 20px 15px;
+	/* 清除hover的浮動 */
+	border-bottom: 4px solid transparent;
+}
+/* RWD響應式網頁設計 */
+/* 360px以下更改文字大小為13px */
+@media(max-width:360px) {
+	.dress-nav li a {
+		font-size: 13px;
+	}
 }
 
-.rent-img {
-    max-width: 300px;
-    height: 280px;
+/* 婚紗禮服頁面選單超連結hover效果 */
+.dress-nav li a:hover {
+	opacity: 0.8;
+	transition: all 0.1s;
+	border-bottom: 4px solid IndianRed;
 }
 
-.rent {
+/* 婚紗禮服頁面照片區塊 */
+.dress-img-box {
+    margin-bottom: 15px;
+    padding: 15px 15px;
     text-align: center;
-    margin-bottom: 25px;
-    font-size: 17px;
 }
 
-.rent-a {
-    color: LightCoral;
+/* 婚紗禮服頁面照片寬高設定 */
+.dress-img {
+    width: 300px;
+    height: 416px;
 }
-
-.rent-a:hover {
-    text-decoration: none;
-    color: IndianRed;
+/* RWD響應式網頁設計 */
+/* 539px以下婚紗禮服頁面照片 寬度自適應延伸 */
+@media(max-width:539px) {
+	.dress-img {
+		width: 100%;
+	}
 }
+/* RWD響應式網頁設計 */
+/* 320px以下婚紗禮服頁面照片 更改高度為361px */
+@media(max-width:320px) {
+	.dress-img {
+		height: 361px;
+	}
+}
+/* 主內容結束 */
