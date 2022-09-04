@@ -32,7 +32,7 @@ button:focus {
 
 /* icon寬度設定 */
 .navbar-icon {
-    max-width: 150px;
+    max-width: 140px;
 }
 
 /* 下拉式選單選項文字顏色 */
@@ -91,6 +91,13 @@ button:focus {
 @media(max-width:767px) {
     .banner-h1 {
         font-size: 20px;
+    }
+}
+/* RWD響應式網頁設計 */
+/* 320px以下更改h1標題文字大小 */
+@media(max-width:320px) {
+    .banner-h1 {
+        font-size: 16px;
     }
 }
 
@@ -446,4 +453,25 @@ footer ul {
 /* 一鍵返回網頁最頂端按鈕超連結active特效(改為黑色) */
 .goBackBtn-a:active {
     color: black;
+}
+
+/* 滾動視差 */
+/* 滾動套用css效果 */
+.animated {
+    /* 將透明度設為0來隱藏區塊 */
+    opacity: 0;
+
+    /* 產生漸變效果 */
+    transition: all 1.5s;
+
+    /* 元素向下移50px */
+    transform: translateY(50px);
+}
+
+.fadeIn {
+    /* 將透明度設為1來顯示區塊 */
+    opacity: 1;
+
+    /* fadeIn後，元素從下移50px處，回到原本的位置 */
+    transform: translateY(0);
 }
