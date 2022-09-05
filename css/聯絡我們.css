@@ -21,8 +21,8 @@
 /* 聯絡資訊區塊開頭p段落文字 */
 .contact-us-p1 {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 /* 聯絡資訊區塊開頭p段落下方虛線 */
@@ -34,7 +34,7 @@
 /* 聯絡資訊p段落文字 */
 .contact-us-p2 {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
