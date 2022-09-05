@@ -336,7 +336,7 @@ button:focus {
 /* footer */
 /* footer區塊背景顏色 */
 .footer-style {
-    background-color: LavenderBlush;
+    background: LavenderBlush;
 }
 
 /* footer內容區塊文字置中 */
@@ -413,16 +413,14 @@ footer ul {
     font-size: 50px;
 }
 
-/* footer版權區塊 */
+/* footer版權區塊文字顏色 */
 .footer-end {
-    background-color: LavenderBlush;
     color: Gray;
-    font-size: 18px;
 }
 
 /* footer版權區塊p段落樣式設定 */
 .footer-end p {
-    font-size: 8px;
+    font-size: 12px;
     margin: 0;
 }
 /* footer end */
