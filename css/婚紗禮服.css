@@ -34,6 +34,11 @@
 	border-bottom: 4px solid IndianRed;
 }
 
+/* 內容區塊h1標題margin設定 */
+.title-margin {
+	margin-bottom: 72px;
+}
+
 /* 婚紗禮服頁面照片區塊 */
 .dress-img-box {
     margin-bottom: 15px;
