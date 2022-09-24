@@ -1,3 +1,8 @@
+// 鼠標滑入持續輪播
+$('.carousel').carousel({
+    pause: false
+    });
+
 // 視差滾動
 // 選單滑動效果
 $(document).ready(function(){

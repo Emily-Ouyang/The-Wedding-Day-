@@ -52,6 +52,15 @@ button:focus {
 /* navbar end */
 
 /* header */
+/* 輪播指示器樣式 */
+.carousel-indicators [data-target] {
+    background-color: DimGray;   
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
 /* 首頁輪播圖自適應 */
 .headerimg-carousel-style {
         display: block;
