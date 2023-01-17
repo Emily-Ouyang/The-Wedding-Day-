@@ -13,21 +13,19 @@ button:focus {
 /* navbar */
 /* 導覽列選項樣式設定 */
 .navbar-item-style {
-    font-size: 18px;
+    font-size: 17px;
     position: relative;
-    bottom: 0px;
+    transition: translateY 0.3s;
 }
 
 /* 導覽列選項hover樣式設定 */
 .navbar-item-style:hover {
-    font-size: 20px;
     color: black;
     border-radius: 3px;
     padding: 4px;
     background-color: Darkgray;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
-    bottom: 9px;
-    transition: all 0.3s ease-out;
+    transform: translateY(-9px);
 }
 
 /* icon寬度設定 */
